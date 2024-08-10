@@ -1,2 +1,0 @@
-// ini js
-// halo js
