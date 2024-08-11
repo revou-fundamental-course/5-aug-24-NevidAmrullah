@@ -1,1 +1,23 @@
-/* ini css */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Bagian main*/
+main {
+    display: flex;
+}
+/* style kontainer kiri */
+.main-container{
+    width: 55%;
+    margin-right: 50px;
+}
+
+.main-tittle {
+    text-align: center;
+    margin: 10px;
+}
+
+form {
+    background-color: aliceblue;
+    height: 300px;
+}
+
