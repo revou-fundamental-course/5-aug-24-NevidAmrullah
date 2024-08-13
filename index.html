@@ -13,10 +13,10 @@
         <aside class="main-container">
             <p class="main-paragraph">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh ynag sehat.Bagaimana denganmu?Yuk,hitnung sekarang di kalkulator BMI</p>
             <!--kalkulator untuk user input -->
-            <form action="">
+            <form action="" onsubmit="return hitungBmi()">
                 <Label for=""><b>Jenis Kelamin</b></Label><br>
                 <input type="radio" name="jenis-kelamin" id="laki-laki"><label for="laki-laki">Laki-laki</label>
-                <input type="radio" name="jenis-kelamin" id="perempuan"><label for="perempuan">Perempuan</label> 
+                <input type="radio" name="jenis-kelamin" id="perempuan"><label for="perempuan">Wanita</label> 
                 <br><br>
                 <label for="berat-badan"><b>Berat Badan</b></label><br>
                 <input type="number" id="berat-badan">
@@ -28,8 +28,8 @@
                 <input type="number" id="tinggi-badan">
                 <br><br>
 
-                <button>Hitung BMI</button>
-                <button>Reset</button>
+                <button value="submit" onsubmit="hitungBmi()">Hitung BMI</button>
+                <button value="Reset" onreset="">Reset</button>
             </form>
 
             <!-- penjelesan website -->
@@ -51,15 +51,11 @@
             </article>
         </aside>
     <!-- kontainer kanan -->
-        <aside>
+        <aside class="second-aside">
             <h2>Hasil</h2>
-            <div class="container">
-                <h3>Berat Badan Lebih</h3>
-                <input type="number">
-                <p>Anda Memiliki berat badan berlebih</p>
-                <button>Download Hasil BMI</button>
-            </div>           
-        </aside>
-    </main>
+            <div id="hasil-output"></div>
+            <div id="keterangan"></div>
+            <div id="program-diet"></div>
+        <script src="js/script.js"></script>
 </body>
 </html>
