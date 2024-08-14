@@ -26,6 +26,24 @@ function hitungBmi() {
         status.innerHTML = "Kegemukan (obesitas)"
     }
 
+    if (hasil <= 18.5) {
+        var status1 = document.getElementById("program-diet");
+        status1.innerHTML = "Ubah pola makan dan tingkatkan berat badan dengan olahraga";
+    }
+    else if (hasil <= 24.9 ) {
+        var status1 = document.getElementById("program-diet");
+        status1.innerHTML = "Pertahankan berat badan ideal anda degan rutin olahraga dan perhatikan menu makanan ";
+    }
+    else if (hasil <= 29.9) {
+        var status1 = document.getElementById("program-diet");
+        status1.innerHTML = "Anda bisa mengurangi berat badan anda dengan cara defisit kalori dan rutin latihan,";
+    }
+    else if (hasil > 30.0) {
+        var status1 = document.getElementById("program-diet");
+        status1.innerHTML = "Anda dalam kategori obes.Cara terbaik untuk menurunkan berat badan adalah dengan mengatur berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga"
+    }
+    
+
     return false;
 }
 
