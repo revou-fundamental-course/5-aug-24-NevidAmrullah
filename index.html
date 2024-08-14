@@ -15,17 +15,17 @@
             <!--kalkulator untuk user input -->
             <form action="" onsubmit="return hitungBmi()">
                 <Label for=""><b>Jenis Kelamin</b></Label><br>
-                <input type="radio" name="jenis-kelamin" id="laki-laki"><label for="laki-laki">Laki-laki</label>
+                <input type="radio" name="jenis-kelamin" id="laki-laki" required><label for="laki-laki">Laki-laki</label>
                 <input type="radio" name="jenis-kelamin" id="perempuan"><label for="perempuan">Wanita</label> 
                 <br><br>
                 <label for="berat-badan"><b>Berat Badan</b></label><br>
-                <input type="number" id="berat-badan">
+                <input type="number" id="berat-badan" required>
                 <br><br>           
                 <label for="usia"><b>Usia</b></label><br>
-                <input type="number" id="usia">
+                <input type="number" id="usia" required>
                 <br><br>
-                <label for="tinggi-badan"><b>Tinggi badan [cm]</b></label><br>
-                <input type="number" id="tinggi-badan">
+                <label for="tinggi-badan"><b>Tinggi badan [cm]</b></label><br >
+                <input type="number" id="tinggi-badan" required>
                 <br><br>
 
                 <button type="submit" onsubmit="hitungBmi()">Hitung BMI</button>
@@ -58,7 +58,12 @@
                 <div id="keterangan"></div>
             </div>
             <div id="program-diet" class="outputAll"></div>
-            <div id="penyakit" class="outputAll"></div>
+            <div id="penyakit" class="outputAll">Beberapa Penyakit dari Obesitas
+                <p>Diabetes</p>
+                <p>Hipertensi</p>
+                <p>Sakit Jantung</p>
+                <p>Osteoarthritis</p> 
+            </div>
         </aside>
             
 

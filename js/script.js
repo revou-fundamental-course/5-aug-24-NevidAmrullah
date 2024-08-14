@@ -10,7 +10,6 @@ function hitungBmi() {
 //meng-outputkan hasil perhitungan ke html
     var printOutput = document.getElementById("hasil-output");
     printOutput.innerHTML = hasil.toFixed(2);
-//program if else untuk menentukan kategori badan ideal dan tidak ideal
 
 // validasi form
     if (angka1 && angka2){
@@ -19,6 +18,8 @@ function hitungBmi() {
     else {
         var printOutput = document.getElementById("hasil-output");
         printOutput.innerHTML = "Harap lengkapi semua bidang";
+
+//program if else untuk menentukan kategori badan ideal dan tidak ideal
     }
     if (hasil <= 18.5) {
         var status = document.getElementById("keterangan");
