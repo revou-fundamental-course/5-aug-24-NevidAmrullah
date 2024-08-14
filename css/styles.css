@@ -1,13 +1,17 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+p {
+    font-size: 15px;
+}
 /* Bagian main*/
 main {
     display: flex;
 }
 /* style kontainer kiri */
 .main-container{
-    width: 55%;
+    width: 50%;
     margin-right: 50px;
 }
 
@@ -29,5 +33,34 @@ button {
     background-color:rgb(63, 63, 218) ;
     color: white;
     padding: 5px;
+}  
+
+/* style form hasil */
+
+.second-aside {
+    background-color: aliceblue;
+    margin-top: 18px;
+    width: 50%;
+    height: 200px;
+}
+
+.hasil-tittle {
+    text-align: center;
+    margin: 20px;
+}
+
+#hasil-output {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellowgreen; 
+    overflow: hidden;
+}
+
+#keterangan {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
 }
 
