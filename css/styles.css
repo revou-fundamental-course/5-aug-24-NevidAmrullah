@@ -10,6 +10,10 @@ main {
     display: flex;
 }
 /* style kontainer kiri */
+#berat-badan, #tinggi-badan, #usia {
+    width: 80%;
+}
+
 .main-container{
     width: 50%;
     margin-right: 50px;
@@ -69,3 +73,7 @@ button {
     height: 300px;
 }
 
+#penyakit {
+    background-color: aliceblue;
+    height: 200px;
+}
