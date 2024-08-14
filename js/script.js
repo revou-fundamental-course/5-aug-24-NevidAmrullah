@@ -61,7 +61,3 @@ function hitungBmi() {
 
     return false;
 }
-
-function reset() {
-    document.getElementsByClassName("OutputAll").reset();
-}
